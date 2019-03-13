@@ -34,3 +34,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+scaling-train/\.idea/\.idea\.scaling-train/\.idea/
+
+scaling-train/\.idea/\.idea\.scaling-train/
