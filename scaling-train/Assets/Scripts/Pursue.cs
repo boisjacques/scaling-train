@@ -4,26 +4,27 @@ using UnityEngine;
 
 public class Pursue : SteeringBehaviour
 {
-    public Boid target;
+    public GameObject target;
 
-    Vector3 targetPos;
+    Vector3 _targetPos;
 
     public void OnDrawGizmos()
     {
         if (Application.isPlaying)
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawLine(transform.position, targetPos);
+            Gizmos.DrawLine(transform.position, _targetPos);
         }
     }
 
     public override Vector3 Calculate()
     {
-        float dist = Vector3.Distance(target.transform.position, transform.position);
+        Vector3 position = target.transform.position;
+        float dist = Vector3.Distance(position, transform.position);
         float time = dist / boid.maxSpeed;
 
-        targetPos = target.transform.position + (target.velocity * time);
+        _targetPos = position + (target.GetComponent<Rigidbody>().velocity * time);
 
-        return boid.SeekForce(targetPos);
+        return boid.SeekForce(_targetPos);
     }
 }

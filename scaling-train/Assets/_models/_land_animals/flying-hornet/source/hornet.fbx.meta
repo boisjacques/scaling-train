@@ -1,0 +1,194 @@
+fileFormatVersion: 2
+guid: e370797987b0e46529dd2e1eaf3397aa
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ant01
+    100002: ant02
+    100004: bigWingGrp
+    100006: BodyGrp
+    100008: chest
+    100010: head
+    100012: Hornet
+    100014: //RootNode
+    100016: leg01
+    100018: leg01 1
+    100020: leg02
+    100022: leg02 1
+    100024: leg03
+    100026: leg03 1
+    100028: lfLegGrp
+    100030: lfWing
+    100032: lfWing 1
+    100034: lilWingGrp
+    100036: rtLegGrp
+    100038: rtWing
+    100040: rtWing 1
+    100042: tail
+    100044: wing01
+    100046: wing01 1
+    100048: wing01 2
+    100050: wing01 3
+    400000: ant01
+    400002: ant02
+    400004: bigWingGrp
+    400006: BodyGrp
+    400008: chest
+    400010: head
+    400012: Hornet
+    400014: //RootNode
+    400016: leg01
+    400018: leg01 1
+    400020: leg02
+    400022: leg02 1
+    400024: leg03
+    400026: leg03 1
+    400028: lfLegGrp
+    400030: lfWing
+    400032: lfWing 1
+    400034: lilWingGrp
+    400036: rtLegGrp
+    400038: rtWing
+    400040: rtWing 1
+    400042: tail
+    400044: wing01
+    400046: wing01 1
+    400048: wing01 2
+    400050: wing01 3
+    2100000: legs
+    2100002: Hornet1
+    2100004: Eyes
+    2100006: wings
+    2300000: ant01
+    2300002: ant02
+    2300004: chest
+    2300006: head
+    2300008: leg01
+    2300010: leg01 1
+    2300012: leg02
+    2300014: leg02 1
+    2300016: leg03
+    2300018: leg03 1
+    2300020: tail
+    2300022: wing01
+    2300024: wing01 1
+    2300026: wing01 2
+    2300028: wing01 3
+    3300000: ant01
+    3300002: ant02
+    3300004: chest
+    3300006: head
+    3300008: leg01
+    3300010: leg01 1
+    3300012: leg02
+    3300014: leg02 1
+    3300016: leg03
+    3300018: leg03 1
+    3300020: tail
+    3300022: wing01
+    3300024: wing01 1
+    3300026: wing01 2
+    3300028: wing01 3
+    4300000: leg03
+    4300002: leg01
+    4300004: leg02
+    4300006: leg03
+    4300008: leg01
+    4300010: leg02
+    4300012: tail
+    4300014: head
+    4300016: ant01
+    4300018: ant02
+    4300020: chest
+    4300022: wing01
+    4300024: wing01
+    4300026: wing01
+    4300028: wing01
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

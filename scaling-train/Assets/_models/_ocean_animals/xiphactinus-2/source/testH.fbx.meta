@@ -1,0 +1,389 @@
+fileFormatVersion: 2
+guid: bba0cd5dc8cd1483c9cc16eb03fab34a
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: base:eye
+    100002: base:polySurface1
+    100004: base:polySurface2
+    100006: base:teethnew
+    100008: j_fin1_01_bind
+    100010: j_fin1_02_bind
+    100012: j_fin1_03
+    100014: j_fin3_01_bind
+    100016: j_fin3_02
+    100018: j_fin3_02 1
+    100020: j_fin3_03
+    100022: j_jaw_01_bind
+    100024: j_jaw_02
+    100026: j_left_eye_bind
+    100028: j_left_gill_01_bind
+    100030: j_left_gill_02
+    100032: j_left_gill_03_bind
+    100034: j_left_gill_04
+    100036: j_leftFlipper1_01_bind
+    100038: j_leftFlipper1_02
+    100040: j_leftFlipper1_02_bind
+    100042: j_leftFlipper1_03
+    100044: j_leftFlipper1_03_bind
+    100046: j_leftFlipper1_04
+    100048: j_leftFlipper1_04 1
+    100050: j_leftFlipper1_05
+    100052: j_leftFlipper2_01_bind
+    100054: j_leftFlipper2_02
+    100056: j_leftFlipper2_02_bind
+    100058: j_leftFlipper2_03
+    100060: j_leftFlipper2_03_bind
+    100062: j_leftFlipper2_04
+    100064: j_leftFlipper2_04 1
+    100066: j_leftFlipper2_05
+    100068: j_neck_02_bind
+    100070: j_neck_03_bind
+    100072: j_neck_04
+    100074: j_right_eye_bind
+    100076: j_right_gill_03_bind
+    100078: j_right_gill_04
+    100080: j_right_gill_05_bind
+    100082: j_right_gill_06
+    100084: j_rightFlipper1_01_bind
+    100086: j_rightFlipper1_02
+    100088: j_rightFlipper1_02_bind
+    100090: j_rightFlipper1_03
+    100092: j_rightFlipper1_03_bind
+    100094: j_rightFlipper1_04
+    100096: j_rightFlipper1_04 1
+    100098: j_rightFlipper1_05
+    100100: j_rightFlipper2_01_bind
+    100102: j_rightFlipper2_02
+    100104: j_rightFlipper2_02_bind
+    100106: j_rightFlipper2_03
+    100108: j_rightFlipper2_03_bind
+    100110: j_rightFlipper2_04
+    100112: j_rightFlipper2_04 1
+    100114: j_rightFlipper2_05
+    100116: j_spine_01_bind
+    100118: j_spine_02_bind
+    100120: j_spine_03_bind
+    100122: j_spine_04_bind
+    100124: j_spine_05_bind
+    100126: j_spine_06_bind
+    100128: j_spine_07_bind
+    100130: j_spine_08_bind
+    100132: j_spine_09_bind
+    100134: j_spine_10_bind
+    100136: j_spine_11_bind
+    100138: j_tail1_01_bind
+    100140: j_tail1_02
+    100142: j_tail1_02_bind
+    100144: j_tail1_03
+    100146: j_tail1_03_bind
+    100148: j_tail1_04
+    100150: j_tail1_04 1
+    100152: j_tail1_05
+    100154: j_tail2_01_bind
+    100156: j_tail2_02
+    100158: j_tail2_02_bind
+    100160: j_tail2_03
+    100162: j_tail2_03_bind
+    100164: j_tail2_04
+    100166: j_tail2_04 1
+    100168: j_tail2_05
+    100170: joint10
+    100172: joint10 1
+    100174: joint10 2
+    100176: joint10 3
+    100178: joint11_bind
+    100180: joint12
+    100182: joint12_bind
+    100184: joint13
+    100186: joint13 1
+    100188: joint13 2
+    100190: joint13_bind
+    100192: joint14
+    100194: joint14 1
+    100196: joint14 2
+    100198: joint14 3
+    100200: joint14 4
+    100202: joint14 5
+    100204: joint14 6
+    100206: joint14_bind
+    100208: joint15
+    100210: joint16
+    100212: joint16 1
+    100214: joint16 2
+    100216: joint16 3
+    100218: joint17
+    100220: joint17 1
+    100222: joint18
+    100224: joint19_Junk
+    100226: joint20
+    100228: joint20 1
+    100230: joint20 2
+    100232: joint20 3
+    100234: joint20 4
+    100236: joint20 5
+    100238: joint20 6
+    100240: joint20 7
+    100242: joint21
+    100244: joint21 1
+    100246: joint21 2
+    100248: joint21 3
+    100250: joint22
+    100252: joint22 1
+    100254: joint23
+    100256: joint7_bind
+    100258: joint8
+    100260: joint9
+    100262: joint9_Junk
+    100264: maneulCtrl
+    100266: pathCtrl_01
+    100268: pathCtrl_02
+    100270: pathCtrl_03
+    100272: pathCtrl_04
+    100274: pathCtrl_05
+    100276: pathCtrl_06
+    100278: pathCtrl_07
+    100280: pathCtrl_08
+    100282: //RootNode
+    400000: base:eye
+    400002: base:polySurface1
+    400004: base:polySurface2
+    400006: base:teethnew
+    400008: j_fin1_01_bind
+    400010: j_fin1_02_bind
+    400012: j_fin1_03
+    400014: j_fin3_01_bind
+    400016: j_fin3_02
+    400018: j_fin3_02 1
+    400020: j_fin3_03
+    400022: j_jaw_01_bind
+    400024: j_jaw_02
+    400026: j_left_eye_bind
+    400028: j_left_gill_01_bind
+    400030: j_left_gill_02
+    400032: j_left_gill_03_bind
+    400034: j_left_gill_04
+    400036: j_leftFlipper1_01_bind
+    400038: j_leftFlipper1_02
+    400040: j_leftFlipper1_02_bind
+    400042: j_leftFlipper1_03
+    400044: j_leftFlipper1_03_bind
+    400046: j_leftFlipper1_04
+    400048: j_leftFlipper1_04 1
+    400050: j_leftFlipper1_05
+    400052: j_leftFlipper2_01_bind
+    400054: j_leftFlipper2_02
+    400056: j_leftFlipper2_02_bind
+    400058: j_leftFlipper2_03
+    400060: j_leftFlipper2_03_bind
+    400062: j_leftFlipper2_04
+    400064: j_leftFlipper2_04 1
+    400066: j_leftFlipper2_05
+    400068: j_neck_02_bind
+    400070: j_neck_03_bind
+    400072: j_neck_04
+    400074: j_right_eye_bind
+    400076: j_right_gill_03_bind
+    400078: j_right_gill_04
+    400080: j_right_gill_05_bind
+    400082: j_right_gill_06
+    400084: j_rightFlipper1_01_bind
+    400086: j_rightFlipper1_02
+    400088: j_rightFlipper1_02_bind
+    400090: j_rightFlipper1_03
+    400092: j_rightFlipper1_03_bind
+    400094: j_rightFlipper1_04
+    400096: j_rightFlipper1_04 1
+    400098: j_rightFlipper1_05
+    400100: j_rightFlipper2_01_bind
+    400102: j_rightFlipper2_02
+    400104: j_rightFlipper2_02_bind
+    400106: j_rightFlipper2_03
+    400108: j_rightFlipper2_03_bind
+    400110: j_rightFlipper2_04
+    400112: j_rightFlipper2_04 1
+    400114: j_rightFlipper2_05
+    400116: j_spine_01_bind
+    400118: j_spine_02_bind
+    400120: j_spine_03_bind
+    400122: j_spine_04_bind
+    400124: j_spine_05_bind
+    400126: j_spine_06_bind
+    400128: j_spine_07_bind
+    400130: j_spine_08_bind
+    400132: j_spine_09_bind
+    400134: j_spine_10_bind
+    400136: j_spine_11_bind
+    400138: j_tail1_01_bind
+    400140: j_tail1_02
+    400142: j_tail1_02_bind
+    400144: j_tail1_03
+    400146: j_tail1_03_bind
+    400148: j_tail1_04
+    400150: j_tail1_04 1
+    400152: j_tail1_05
+    400154: j_tail2_01_bind
+    400156: j_tail2_02
+    400158: j_tail2_02_bind
+    400160: j_tail2_03
+    400162: j_tail2_03_bind
+    400164: j_tail2_04
+    400166: j_tail2_04 1
+    400168: j_tail2_05
+    400170: joint10
+    400172: joint10 1
+    400174: joint10 2
+    400176: joint10 3
+    400178: joint11_bind
+    400180: joint12
+    400182: joint12_bind
+    400184: joint13
+    400186: joint13 1
+    400188: joint13 2
+    400190: joint13_bind
+    400192: joint14
+    400194: joint14 1
+    400196: joint14 2
+    400198: joint14 3
+    400200: joint14 4
+    400202: joint14 5
+    400204: joint14 6
+    400206: joint14_bind
+    400208: joint15
+    400210: joint16
+    400212: joint16 1
+    400214: joint16 2
+    400216: joint16 3
+    400218: joint17
+    400220: joint17 1
+    400222: joint18
+    400224: joint19_Junk
+    400226: joint20
+    400228: joint20 1
+    400230: joint20 2
+    400232: joint20 3
+    400234: joint20 4
+    400236: joint20 5
+    400238: joint20 6
+    400240: joint20 7
+    400242: joint21
+    400244: joint21 1
+    400246: joint21 2
+    400248: joint21 3
+    400250: joint22
+    400252: joint22 1
+    400254: joint23
+    400256: joint7_bind
+    400258: joint8
+    400260: joint9
+    400262: joint9_Junk
+    400264: maneulCtrl
+    400266: pathCtrl_01
+    400268: pathCtrl_02
+    400270: pathCtrl_03
+    400272: pathCtrl_04
+    400274: pathCtrl_05
+    400276: pathCtrl_06
+    400278: pathCtrl_07
+    400280: pathCtrl_08
+    400282: //RootNode
+    2100000: head
+    2100002: body
+    2100004: teeth
+    2100006: eye
+    4300000: base:polySurface1
+    4300002: base:polySurface2
+    4300004: base:teethnew
+    4300006: base:eye
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: base:eye
+    13700002: base:polySurface1
+    13700004: base:polySurface2
+    13700006: base:teethnew
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

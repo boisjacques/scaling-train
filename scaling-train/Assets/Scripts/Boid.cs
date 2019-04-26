@@ -11,11 +11,9 @@ public class Boid : MonoBehaviour
     public Vector3 velocity = Vector3.zero;
     public float mass = 1;
 
-    [Range(0.0f, 10.0f)]
-    public float damping = 0.01f;
+    [Range(0.0f, 10.0f)] public float damping = 0.01f;
 
-    [Range(0.0f, 1.0f)]
-    public float banking = 0.1f;
+    [Range(0.0f, 1.0f)] public float banking = 0.1f;
     public float maxSpeed = 5.0f;
     public float maxForce = 10.0f;
 
@@ -23,15 +21,11 @@ public class Boid : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
         SteeringBehaviour[] behaviours = GetComponents<SteeringBehaviour>();
 
         foreach (SteeringBehaviour b in behaviours)
         {
-            if (b.isActiveAndEnabled)
-            {
-                this.behaviours.Add(b);
-            }
+            this.behaviours.Add(b);
         }
     }
 
@@ -52,6 +46,7 @@ public class Boid : MonoBehaviour
         {
             return Vector3.zero;
         }
+
         float ramped = maxSpeed * (distance / slowingDistance);
 
         float clamped = Mathf.Min(ramped, maxSpeed);
@@ -59,7 +54,7 @@ public class Boid : MonoBehaviour
 
         return desired - velocity;
     }
-    
+
 
     Vector3 Calculate()
     {
@@ -83,7 +78,7 @@ public class Boid : MonoBehaviour
                 {
                     force = Vector3.ClampMagnitude(force, maxForce);
                     break;
-                }               
+                }
             }
         }
 
@@ -100,7 +95,7 @@ public class Boid : MonoBehaviour
         velocity += acceleration * Time.deltaTime;
 
         velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
-        
+
         if (velocity.magnitude > float.Epsilon)
         {
             Vector3 tempUp = Vector3.Lerp(transform.up, Vector3.up + (acceleration * banking), Time.deltaTime * 3.0f);
