@@ -21,6 +21,7 @@ In this scene botch the chickens and the fox are controlled by a state machine. 
 - Picking
 - Fleeing
 - Returning
+
 The Fox's states are:
 - Search Target
 - Approach
