@@ -48,6 +48,8 @@ public class ChickenController : MonoBehaviour
         StartCoroutine(Jump());
         _predator = GameObject.FindWithTag("predator");
         GetComponent<StateMachine>().ChangeState(new PickingState());
+        float angle = Random.Range(0, 360);
+        transform.Rotate(Vector3.up, angle);
     }
 
 
@@ -122,7 +124,8 @@ public class ChickenController : MonoBehaviour
         _rb.useGravity = true;
         _rb.isKinematic = false;
         _rb.mass = 1;
-        Destroy(gameObject, 0.5f);
+        // Destroy(gameObject, 0.5f);
+        transform.parent = null;
     }
 
     void Pick()
@@ -172,15 +175,18 @@ public class ChickenController : MonoBehaviour
     {
         while (!isCaught)
         {
-            if (_stamina - force <= 0)
+            float actualForce = force;
+            float tenth = actualForce / 10;
+            if (_stamina - actualForce <= 0)
             {
-                float diff = _stamina - force;
-                force -= Math.Abs(diff);
+                float diff = _stamina - actualForce;
+                actualForce -= Math.Abs(diff);
             }
 
+            actualForce = Random.Range(actualForce - tenth, actualForce + tenth);
             Transform trf = transform;
-            _rb.AddForce((trf.up + trf.forward) * force, ForceMode.Impulse);
-            _stamina -= force;
+            _rb.AddForce((trf.up + trf.forward) * actualForce, ForceMode.Impulse);
+            _stamina -= actualForce;
             if (_stamina < 30)
             {
                 _stamina += 1.5f;
@@ -190,7 +196,8 @@ public class ChickenController : MonoBehaviour
             rot.x = 0;
             rot.z = 0;
             transform.rotation = Quaternion.Euler(rot);
-            yield return new WaitForSeconds(1);
+            float wait = Random.Range(0.9f, 1.1f);
+            yield return new WaitForSeconds(wait);
         }
     }
 

@@ -76,7 +76,7 @@ public class FoxController : MonoBehaviour
 
     public void Eat()
     {
-        new WaitForSeconds(3);
+        new WaitForSeconds(5);
         doneEating = true;
         _preyController.Drop();
         prey = null;
@@ -126,7 +126,7 @@ public class ApproachState : State
     {
         if (Vector3.Distance(
                 owner.GetComponent<FoxController>().prey.transform.position,
-                owner.transform.position) < 7)
+                owner.transform.position) < 4)
             owner.ChangeState(new AttackState());
     }
 

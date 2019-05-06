@@ -31,7 +31,7 @@ public class ObstacleAvoidance : SteeringBehaviour
     public void OnEnable()
     {
         StartCoroutine(UpdateFrontFeelers());
-        StartCoroutine(UpdateSideFeelers());
+        //StartCoroutine(UpdateSideFeelers());
     }
 
     public void OnDrawGizmos()
@@ -73,11 +73,12 @@ public class ObstacleAvoidance : SteeringBehaviour
 
     void UpdateFeeler(int feelerNum, Quaternion localRotation, float baseDepth, FeelerInfo.FeeelerType feelerType)
     {
-        Vector3 direction = localRotation * transform.rotation * Vector3.forward;
+        Transform trf = transform;
+        Vector3 direction = localRotation * trf.rotation * Vector3.forward;
         float depth = baseDepth + ((boid.velocity.magnitude / boid.maxSpeed) * baseDepth);
 
         RaycastHit info;
-        bool collided = Physics.SphereCast(transform.position, feelerRadius, direction, out info, depth, mask.value);
+        bool collided = Physics.SphereCast(trf.position, feelerRadius, direction, out info, depth, mask.value);
         Vector3 feelerEnd = collided ? info.point : (transform.position + direction * depth);
         feelers[feelerNum] = new FeelerInfo(feelerEnd, info.normal
             , collided, feelerType);
@@ -88,7 +89,7 @@ public class ObstacleAvoidance : SteeringBehaviour
         yield return new WaitForSeconds(Random.Range(0.0f, 0.5f));
         while (true)
         {
-            UpdateFeeler(0, Quaternion.identity, this.forwardFeelerDepth, FeelerInfo.FeeelerType.front);
+            UpdateFeeler(0, Quaternion.identity, this.forwardFeelerDepth, FeelerInfo.FeeelerType.Front);
             yield return new WaitForSeconds(1.0f / frontFeelerUpdatesPerSecond);
         }
     }
@@ -100,13 +101,13 @@ public class ObstacleAvoidance : SteeringBehaviour
         while (true)
         {
             // Left feeler
-            UpdateFeeler(1, Quaternion.AngleAxis(angle, Vector3.up), sideFeelerDepth, FeelerInfo.FeeelerType.side);
+            UpdateFeeler(1, Quaternion.AngleAxis(angle, Vector3.up), sideFeelerDepth, FeelerInfo.FeeelerType.Side);
             // Right feeler
-            UpdateFeeler(2, Quaternion.AngleAxis(-angle, Vector3.up), sideFeelerDepth, FeelerInfo.FeeelerType.side);
+            UpdateFeeler(2, Quaternion.AngleAxis(-angle, Vector3.up), sideFeelerDepth, FeelerInfo.FeeelerType.Side);
             // Up feeler
-            UpdateFeeler(3, Quaternion.AngleAxis(angle, Vector3.right), sideFeelerDepth, FeelerInfo.FeeelerType.side);
+            UpdateFeeler(3, Quaternion.AngleAxis(angle, Vector3.right), sideFeelerDepth, FeelerInfo.FeeelerType.Side);
             // Down feeler
-            UpdateFeeler(4, Quaternion.AngleAxis(-angle, Vector3.right), sideFeelerDepth, FeelerInfo.FeeelerType.side);
+            UpdateFeeler(4, Quaternion.AngleAxis(-angle, Vector3.right), sideFeelerDepth, FeelerInfo.FeeelerType.Side);
 
             yield return new WaitForSeconds(1.0f / sideFeelerUpdatesPerSecond);
         }
@@ -115,28 +116,28 @@ public class ObstacleAvoidance : SteeringBehaviour
 
     Vector3 CalculateSceneAvoidanceForce(FeelerInfo info)
     {
-        Vector3 force = Vector3.zero;
+        Vector3 forceLocal = Vector3.zero;
 
-        Vector3 fromTarget = fromTarget = transform.position - info.point;
+        Vector3 fromTarget = transform.position - info.point;
         float dist = Vector3.Distance(transform.position, info.point);
 
         switch (forceType)
         {
             case ForceType.normal:
-                force = info.normal * (forwardFeelerDepth * scale / dist);
+                forceLocal = info.normal * (forwardFeelerDepth * scale / dist);
                 break;
             case ForceType.incident:
                 fromTarget.Normalize();
-                force -= Vector3.Reflect(fromTarget, info.normal) * (forwardFeelerDepth / dist);
+                forceLocal -= Vector3.Reflect(fromTarget, info.normal) * (forwardFeelerDepth / dist);
                 break;
             case ForceType.up:
-                force += Vector3.up * (forwardFeelerDepth * scale / dist);
+                forceLocal += Vector3.up * (forwardFeelerDepth * scale / dist);
                 break;
             case ForceType.braking:
-                force += fromTarget * (forwardFeelerDepth / dist);
+                forceLocal += fromTarget * (forwardFeelerDepth / dist);
                 break;
         }
-        return force;
+        return forceLocal;
     }
     
     struct FeelerInfo
@@ -148,8 +149,8 @@ public class ObstacleAvoidance : SteeringBehaviour
 
         public enum FeeelerType
         {
-            front,
-            side
+            Front,
+            Side
         };
 
         public FeelerInfo(Vector3 point, Vector3 normal, bool collided, FeeelerType feelerType)

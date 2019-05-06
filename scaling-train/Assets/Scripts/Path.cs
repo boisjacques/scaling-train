@@ -62,9 +62,4 @@ public class Path : MonoBehaviour {
     {
         return next == waypoints.Count - 1;
     }
-
-
-
-
-
 }
